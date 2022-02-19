@@ -1,0 +1,1221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <title>Report</title>
+    <style type="text/css">
+      .bold
+      {
+        font-weight: bolder;
+      }
+      .sidebar
+      {
+        font-family: arial;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        -webkit-box-shadow: 7px 2px 19px -8px rgba(0,0,0,0.75);
+        -moz-box-shadow: 7px 2px 19px -8px rgba(0,0,0,0.75);
+        box-shadow: 7px 2px 19px -8px rgba(0,0,0,0.75);height:580px;
+      }
+      .sidebar li
+      {
+        padding: 12px 0px 12px 14px;
+        margin:0px; 
+        zoom:90%;
+        border-bottom: 0.1em solid #dddcdc;
+      }
+      .sidebar li:hover
+      {
+        background: #7eff82;
+      }
+      .sa
+      {
+        -webkit-box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.75);
+      }
+      .b
+      {
+        border-top-left-radius: 110%; 
+      }
+      .col
+      {
+        border-color: transparent transparent transparent #1a7221 ;
+      }
+      @media print {
+       .col-md-1,.col-md-2,.col-md-3,.col-md-4,
+  .col-md-5,.col-md-6,.col-md-7,.col-md-8, 
+  .col-md-9,.col-md-10,.col-md-11,.col-md-12 {
+    float: left;
+  }
+
+  .col-md-1 {
+    width: 8%;
+  }
+  .col-md-2 {
+    width: 16%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33%;
+  }
+  .col-md-5 {
+    width: 42%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58%;
+  }
+  .col-md-8 {
+    width: 66%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-10 {
+    width: 83%;
+  }
+  .col-md-11 {
+    width: 92%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+      }
+      
+
+    </style>
+  </head>
+  <body>
+    
+    <div class="report" hidden="">
+      <!-- start -->
+
+      <!-- end -->
+    </div>
+
+   <div class="mainContainer" style="overflow-x:hidden;overflow-y: hidden;">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background: #399783;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="logohead.png" width="200"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="menulist" aria-label="Search" style="padding:5px;height:35px;border-radius:30px;margin-top:10px;">
+        <img src="person-icon.png" width="50" style="display: inline;">
+        <span style="color:#ffffff;margin-top:16px;">ajay@sunrise.in</span>
+      </form>
+    </div>
+  </div>
+</nav>
+
+      <div class="row" >
+        <div class="col-md-2" >
+          <!-- sidebar start -->
+            <ul style="" class="sidebar">
+              <li><i class="fa-solid fa-table-columns"></i>&nbsp;&nbsp;DashBoard</li>
+              <li><i class="fa-brands fa-vaadin"></i>&nbsp;&nbsp;Administrator</li>
+              <li><i class="fa-thin fa-building"></i>&nbsp;&nbsp;FrontOffice</li>
+              <li><i class="fa fa-bar-chart"></i>&nbsp;&nbsp;Centeral Billing</li>
+              <li><i class="fa fa-line-chart"></i>&nbsp;&nbsp;Fee Recipient and Refund</li>
+              <li><i class="fa fa-pie-chart"></i>&nbsp;&nbsp;Central Lab</li>
+              <li><i class="fa fa-area-chart"></i>&nbsp;&nbsp;Outlet Pharmacy</li>
+              <li><i class="fa fa-hospital"></i>&nbsp;&nbsp;Wards</li>
+              <li><i class="fa fa-medkit"></i>&nbsp;&nbsp;Op Pharmacy</li>
+              <li><i class="fa fa-refresh"></i>&nbsp;&nbsp;Discharges</li>
+              <li><i class="fa fa-square"></i>&nbsp;&nbsp;Radiology</li>
+              <li><i class="fa fa-circle"></i>&nbsp;&nbsp;ArogyaSri Pharmacy</li>
+            </ul>
+        <!-- sidebar end -->
+        </div>
+
+        <div class="col-md-10 p-1" style="zoom:80%;">
+          <div class="names" style="padding: 20px;">
+              <span style="background:#ffffff;margin-left:2px;border-top-right-radius:8px;border-bottom-right-radius:8px;" class="p-3 sa border">
+                <span style="background:black;color:white;padding:2px 6px;border-radius:100%;">1</span>Home
+              </span>
+              <span style="background:#ffffff;margin-left:2px;border-top-right-radius: 8px;border-bottom-right-radius: 8px;" class="p-3 sa border">
+                <span style="background:black;color:white;padding:2px 6px;border-radius:100%;">2</span>Central Billing
+              </span>
+
+              <span style="background:#ffffff;margin-left:2px;background:#399883;color:white;border-color:#1a7221;border-top-right-radius: 8px;border-bottom-right-radius: 8px;" class="p-3 sa">
+                <span style="background:black;color:white;padding:2px 6px;border-radius:100%;">3</span>OP: Investigation Billing
+              </span>
+              
+          </div>
+        <div class="accordion" id="accordionExample" style="-webkit-box-shadow: -2px 1px 18px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 1px 18px -1px rgba(0,0,0,0.75);
+box-shadow: -2px 1px 18px -1px rgba(0,0,0,0.75);">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Service Bills And Receipt Information 
+                </button>
+              </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <!-- desing start -->
+                <form name="form1">
+                  <div class="row">
+                    <div class="col-md-4">
+                        
+                        <div class="mb-2">
+                          <label class="bold">UHID/UMR No. <span style="color:red;">*</span></label>
+                          <input type="text" name="uhidNumber">
+                        </div>
+                        <div class="mb-2">
+                          <label class="bold">Patient No.  <span style="color:red;">*</span></label>
+                          <input type="text" name="PatNumber" style="margin-left:32px;">
+                        </div>
+                        <div class="mb-2">
+                          <label class="bold">Treatment No.</label>
+                          <input type="text" name="treatNumber" style="margin-left:20px; ">
+                        </div>
+
+                        <div class="mb-2">
+                          <label class="bold">Recepient type <span style="color:red;">*</span></label>
+                        
+                          <select name='repType' style="padding:4px;width:198px; margin-left:2px; ">
+                            <option>Investigation</option>
+                          </select>
+                        </div>
+
+                        <div class="mb-2">
+                          <label class="bold">Doctor Name<span style="color:red;">*</span></label>
+                          <select name="docName" style="padding:4px;width: 198px;margin-left:23px; ">
+                            <option>--Select--</option>
+                            <option>Dr.LAKSHMI CHAITANYA</option>
+                            <option>BADRI MALLIKARJUNA PRASAD</option>
+                            <option>DR A  ARJUN KUMAR</option>
+                            <option>Dr A GOWRI</option>
+                            <option>Dr A. VAMSIDHAR</option>
+                            <option>Dr A. VIJAYA BHASKAR REDDY</option>
+                            <option>DR ABID</option>
+                            <option>DR ABILASH</option>
+                            <option>DR B SUBBARAYUDU</option>
+                            <option>Dr B. SREENIVAS  RAO</option>
+                            <option>DR C RAMANJULA REDDY</option>
+                            <option>DR D CHINNA BABU</option>
+                            <option>Dr D. JAGADEESWARA REDDY</option>
+                            <option>Dr DINESH REDDY</option>
+                            <option>Dr G SHIVA BHARATH REDDY</option>
+                            <option>DR GANESH</option>
+                            <option>DR HARITHA REDDY</option>
+                            <option>DR JAHANGEER BASHA</option>
+                            <option>DR K JAGADESH BABU</option>
+                            <option>Dr M. MADHU SUDHAN REDDY</option>
+                            <option>DR MURALI MADHAV MD</option>
+                            <option>DR N PRAMODHA</option>
+                            <option>Dr N. SATHISH REDDY</option>
+                            <option>Dr N. SIVANANDA REDDY</option>
+                            <option>Dr N.NAGARJUNA REDDY</option>
+                            <option>DR N.SRINIVAS</option>
+                            <option>DR NAGESH</option>
+                            <option>DR P BHASKAR</option>
+                            <option>Dr P. RAMYATHA REDDY</option>
+                            <option>DR P.MANASA</option>
+                            <option>DR PALLA ABILASH</option>
+                            <option>DR R VENKATA RAMUDU</option>
+                            <option>DR RABBANI</option>
+                            <option>DR RAM MANOHAR</option>
+                            <option>DR RAMAMANOHAR</option>
+                            <option>DR RAVI KUMAR</option>
+                            <option>DR S JAVEED BASHA</option>
+                            <option>DR S RAJA AHAMMED</option>
+                            <option>Dr S. AZARUDDIN</option>
+                            <option>Dr S. MRUDHULA</option>
+                            <option>Dr S. SOMA SHEKAR</option>
+                            <option>DR SAI KIRAN</option>
+                            <option>DR SAI PRASAD</option>
+                            <option>DR SASIDHAR M.D.S</option>
+                            <option>DR SATHISH REDDY PHY</option>
+                            <option>Dr SREEDHAR REDDY</option>
+                            <option>DR SREEKANTH REDDY</option>
+                            <option>DR SRI HARI</option>
+                            <option>DR SUDHEER REDDY</option>
+                            <option>DR SUNIL DATTU</option>
+                            <option>Dr T.Balaji</option>
+                            <option>Dr V. M.SANKAR REDDY</option>
+                            <option>Dr Y. AKHILA REDDY</option>
+                            <option>Dr Y. VENKATA RAMI REDDY</option>
+                            <option>DR YESURATHNAM</option>
+                            <option>DR. HARSHITHA</option>
+                            <option>Dr. MADAN MOHAN RAO</option>
+                            <option>Dr. T. Aparna</option>
+                            <option>DR. VIDYA SAGAR REDDY</option>
+                            <option>Dr.D.Balaji</option>
+                            <option>Dr.D.SUDHA</option>
+                            <option>DR.HARI PRASAD REDDY</option>
+                            <option>Dr.HIMABINDU</option>
+                            <option>Dr.K PAVAN KUMAR REDDY</option>
+                            <option>Dr.kiranmai</option>
+                            <option>DR.M.RAMESH BABU</option>
+                            <option>Dr.O. Srinivas</option>
+                            <option>DR.P.VINAY</option>
+                            <option>DR.RAMANAIAH</option>
+                            <option>Dr.SATHISH REDDY</option>
+                            <option>DR.SIVA KRISHNA</option>
+                            <option>DR.SRAVAN KUMAR REDDY</option>
+                            <option>EMERGENCY</option>
+                          </select>
+                        </div>
+
+                        <div class="mb-2">
+                          <label class="bold" >Refferal Doctor</label>
+                          <select name="refDoc" style="padding:4px;width: 198px;margin-left:15px; ">
+                            <option selected="">--Select--</option>
+                            <option>Dr. Chenna Keshava Reddy</option>
+                          </select>
+                        </div>
+                        <div class="mb-2">
+                          <label class="bold">Company <span style="color:red;">*</span></label>
+                          <select name="company" style="padding:4px;width: 198px;margin-left:50px; ">
+                            <option>--Select--</option>
+                              <option>Arogyarakasha</option>
+                              <option>AROGYASRI</option>
+                              <option>Bajaj</option>
+                              <option>CMRF</option>
+                              <option>EHS</option>
+                              <option>General</option>
+                              <option>INSURANCE</option>
+                          </select>
+                        </div>
+
+                        <div class="mb-2">
+                          <label class="bold">Patient Type <span style="color:red;">*</span></label>
+                          <select name="patType" style="padding:4px;width: 198px;margin-left:23px; ">
+                            <option selected="">Outpatient</option>
+                          </select>
+                        </div>
+                        <div class="mb-2">
+                          <label class="bold">Address</label>
+                          <input type="text" name="address" style="margin-left:76px;">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="mb-2">
+                          <label class="bold">Patient Name</label>
+                          <input type="text" name="patName" style="margin-left:32px; ">
+                      </div>
+                      <div class="mb-2">
+                          <label class="bold">Age</label>
+                          <input type="text" name="age" style="margin-left:114px;">
+                      </div>
+                      <div class="mb-2">
+                          <label class="bold">Gender</label>
+                          <select name="gender" style="width:190px;margin-left:85px;padding:4px;">
+                            <option>--Select--</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Others</option>
+                          </select>
+                      </div>
+                      <div class="mb-2">
+                          <label class="bold">Patient Category</label>
+                          <select name="patCat" style="padding:4px;width: 190px;margin-left:4px; ">
+                            <option selected="">--Select--</option>
+                              <option>Reimbursement</option>
+                              <option>AROGYASRI</option>
+                              <option>EMPLOYEE HEALTHSCHEME</option>
+                              <option>INSURANCE</option>
+                              <option>CGHS</option>
+                              <option>BSNL</option>
+                              <option>BEL</option>
+                              <option>NRSA</option>
+                              <option>ESI</option>
+                              <option>Surgical</option>
+                              <option>CM RELIEF FUND</option> 
+                          </select>
+                      </div>
+                      <div class="mb-2">
+                          <label class="bold">Service Rate</label>
+                          <select name="serviceRate" style="padding:4px;width: 190px;margin-left:40px;  ">
+                            <option selected="">--Select--</option>
+                            <option>Arogyasri</option>
+                            <option>BSNL</option>
+                            <option>CGHS</option>
+                            <option>EHS</option>
+                            <option>General</option>
+                            <option>GENERAL IP</option> 
+                            <option>Insurance</option>
+                            <option>NIMS</option>
+                            <option>NRSC</option>
+
+                          </select>
+                      </div>
+
+                      <div class="mb-2">
+                          <label class="bold">Bill Type</label>
+                          <select name="billType" style="padding:4px;width: 190px;margin-left:74px; ">
+                            <option selected="">--Select--</option>
+                              <option>Cash</option>
+                              <option>Credit</option>
+                              <option>Package</option>
+
+                          </select>
+                      </div>
+
+                       <div class="mb-2">
+                          <label class="bold">Authorized By</label>
+                          <select name="authBy" style="padding:4px;width: 190px;margin-left:27px; ">
+                            <option selected="">--Select--</option>
+                              SINDHU SSREE
+                              <option>Praveen</option>
+                              <option>NAGESH</option>
+                              <option>Raja Shekar</option> 
+                              <option>Balu</option>
+                              <option>Shankar</option>
+                              <option>CHINNAIAH</option>
+                              <option>RAMPRASAD REDDY</option>
+                              <option>MUNTAZ</option>
+                              <option>PUSHPANJALI</option>
+                              <option>KARISHMA</option>
+                              <option>ARIF KHAN</option>
+                              <option>RAJESWARI</option>
+                              <option>BHAVANI</option>
+                              <option>RAJU</option>
+                              <option>THARUN</option>
+                              <option>JAYA RAM</option>
+                              <option>ANURADHA</option>
+                              <option>THUSHARA</option>
+                              <option>SAROJA</option>
+                              <option>SAROJA.P</option>
+                              <option>SONY PRIYANKA</option>
+                              <option>SIDDAIAH</option>
+                              <option>AJAY KUMAR G</option>
+                              <option>SWARAJYAM</option>
+                              <option>PAVAN A</option>
+                              <option>AJITH</option>
+                              <option>SRAVANI</option>
+                              <option>LALITHA</option> DEVI
+                              <option>PRAVEEN</option> KUMAR
+                              <option>PAVAN</option>
+                              <option>SHAFI</option>
+                              <option>SADHIPU</option>
+                              <option>Navya</option>
+                              <option>A.VIJAYABHASKAR REDDY</option>
+                              <option>RAMYATHA REDDY</option>
+                              <option>venkatesh</option>
+                              <option>KIRAN</option>
+                              <option>ASHOK</option>
+                              <option>USHA</option>
+                              <option>SHAHINA</option>
+                              <option>DR SIDDAIAH</option>
+                              <option>DR THARUN</option>
+                              <option>DR PAVAN REDDY</option>
+                              <option>DR MUNTAJ</option>
+                              <option>AJITH</option>
+                              <option>TEJA</option>
+                              <option>RAVI</option>
+                              <option>PRAVEEN</option>
+                              <option>PAVAN</option>
+                              <option>SHAFI</option>
+                              <option>SANKAR</option>
+                              <option>ARIF</option>
+                              <option>CHAND BASHA</option>
+                              <option>RAM PRASAD</option>
+                              <option>SADIQ</option>
+                              <option>SREE LEKHA</option>
+                              <option>DR MAHESH</option>
+                              <option>NARASIMHA YADAV</option>
+                              <option>VENKATESH</option>
+                              <option>MANOHAR</option>
+                              <option>SAMBA</option>
+                              <option>SUNNETHA</option>
+                              <option>PRADEEP</option>
+                              <option>SURENDRA</option>
+                              <option>SAJAHAN</option>
+                              <option>GOVARDHAN</option>
+                              <option>SAI SIDDESWAR</option>
+                              <option>HARSHAD</option>
+                              <option>NAGESH</option>
+                              <option>SANJEEV</option>
+                              <option>KUMAR</option>
+                              <option>MANOJ</option>
+                              <option>MASTHAN</option>
+                              <option>B HEMA LATHA</option>
+                              <option>MAHESWARI</option>
+                              <option>PRASANNA</option>
+                              <option>PUSHPA</option>
+                              <option>KALYANI</option>
+                              <option>LAKSHMI PRASANNA</option>
+                              <option>SUSHMA</option>
+                              <option>LALITHA</option>
+                              <option>MADHAVI</option>
+                              <option>HELEN MARI</option>
+                              <option>SUDHA RANI</option>
+                              <option>ANURADHA</option>
+                              <option>SAVITHRI</option>
+                              <option>SANDHYA</option>
+                              <option>RAMESH</option>
+                              <option>GOWRI SANKAR</option>
+                              <option>BHARGAV</option>
+                              <option>G AJAY KUMAR</option>
+                              <option>VENKATESH</option>
+                              <option>NAFEESA</option>
+                              <option>VENKATESH</option>
+
+                          </select>
+                      </div>
+
+                      <div class="mb-2">
+                          <label class="bold">Department</label>
+                          <select name="department" style="padding:4px;width: 190px;margin-left:45px;  ">
+                            <option selected="">--Select--</option>
+                            <option>Orthopaedics</option>
+                            <option>MEDICAL ONCOLOGY</option>
+                            <option>General Surgery</option>
+                            <option>SURG GASTROENTEROLOGY</option>
+                            <option>Psychiatry</option>
+                            <option>General Medicine</option>
+                            <option>Dental</option>
+                            <option>Urology</option>
+                            <option>obstetrics &gynaecology</option>
+                            <option>EMERGENCY MEDICINE</option>
+                            <option>PHYSIOTHERAPY</option>
+                            <option>Surgical Oncology</option>
+                            <option>Cardiology</option>
+                            <option>Gynaecology</option>
+                            <option>NEUROLOGY</option>
+                            <option>Pulmonology</option>
+                            <option>Anaesthesia</option>
+                            <option>OPERATION THEATRE</option>
+                            <option>Paediatrics</option>
+                            <option>paediatric surgery</option>
+                            <option>NEURO SURGERY</option>
+                            <option>Ophthalmology</option>
+                            <option>MEDICAL ONCOLOGY</option>
+                            <option>Microbiology</option>
+                            <option>Pathology</option>
+                            <option>Radiology</option>
+                            <option>Biochemistry</option>
+                            <option>Dermotology</option>
+                            <option>Med Gastroenterology</option>
+                            <option>Obstrics</option>
+                            <option>Plastic Surgery</option>
+                            <option>Urology</option>
+                            <option>Nephrology</option>
+                          </select>
+                      </div>
+                       <div class="mb-2">
+                          <label class="bold">Created By</label>
+                          <select name="createdBy" style="padding:4px;width: 190px;margin-left:54px;  ">
+                            <option selected="">--Select--</option>
+                            <option>TEJASWINI@SUNRISE.IN</option>
+                            <option>AzITH@SUNRISE.IN</option>
+                            <option>RAVI.P@SUNRISE.IN</option>
+                            <option>ajay@sunrise.in</option>
+                            <option>pavan1@sunrise.in</option>
+                          </select>
+                      </div>
+                      
+
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="mb-2">
+                          <label class="bold">Bill Date</label>       
+                          <input type="text" name="billDate" style="margin-left:92px;">
+                      </div>
+
+                      <div class="mb-2">
+                          <label class="bold">Bill Number</label>
+                          <input type="text" name="billNum" style="margin-left:65px;">
+                      </div>
+
+                       <div class="mb-2">
+                          <label class="bold">Payment Mode</label>
+                          <select name="payMode" style="padding:4px;width: 198px;margin-left:40px; width:190px;  ">
+                              <option>--Select--</option>
+                              <option>Credit</option>
+                              <option>CashCard</option>
+                              <option>credit&amp;cash</option>
+                              <option>Free Consultation</option>
+                              <option>Online Transfer</option>
+                              <option>Google Pay</option>
+                              <option>Phone Pay</option>
+                              <option>CashAdjust</option>
+                              <option>CardAdjust</option>
+                              <option>CashCardAdjust</option>
+                              <option>Adjust</option>
+                          </select>
+                      </div>
+
+                      <div class="mb-2">
+                          <label class="bold">Card Number</label>
+                          <input type="text" name="Card Number" style="margin-left:54px; ">
+                      </div>
+
+                      <div class="mb-2">
+                          <label class="bold">Card Holder Name</label>
+                            &nbsp;
+                          <input type="text" name="cardName">
+                      </div>
+                      
+                       <div class="mb-2">
+                          <label class="bold">Bank Name</label>
+                          <select name="bankName" style="padding:4px;width: 198px;margin-left:70px; width:190px;  ">
+                            <option selected="">--Select--</option>
+                              <option>Andhra Bank</option>
+                              <option>Axis Bank</option>
+                              <option>Bank Of America</option>
+                              <option>Bank of Baroda</option>
+                              <option>Bank of India</option>
+                              <option>Bank Of Maharashtra</option>
+                              <option>Canara Bank</option>
+                              <option>Central Bank of India</option>
+                              <option>Citibank India</option>
+                              <option>Corporation Bank</option>
+                              <option>DBS Bank</option>
+                              <option>Dena Bank</option>
+                              <option>Dhanlaxmi Bank Ltd</option>
+                              <option>Federal Bank Ltd</option>
+                              <option>HDFC Bank</option>
+                              <option>HSBC</option>
+                              <option>ICICI Bank</option>
+                              <option>IDBI Bank</option>
+                              <option>IDFC Bank Limited</option>
+                              <option>Indian Bank</option>
+                              <option>Indian Overseas Bank</option>
+                              <option>IndusInd Bank Ltd.</option>
+                              <option>ING Vysya Bank</option>
+                              <option>Karnataka Bank Ltd.</option>
+                              <option>Karur Vysya Bank</option>
+                              <option>Kotak Mahindra Bank</option>
+                              <option>Lakshmi Vilas Bank Ltd</option>
+                              <option>Oriental Bank of Commerce</option>
+                              <option>Punjab and Maharashtra Bank Ltd</option>
+                              <option>Punjab National Bank</option>
+                              <option>Punjab &amp; Sind Bank</option>
+                              <option>Reserve Bank Of India</option>
+                              <option>South Indian Bank</option>
+                              <option>Standard Chartered Bank</option>
+                              <option>State Bank of India</option>
+                              <option>Syndicate Bank</option>
+                              <option>UBS AG</option>
+                              <option>UCO Bank</option>
+                              <option>Union Bank of India</option>
+                              <option>United Bank of India</option>
+                              <option>United Overseas Bank</option>
+                              <option>Vijaya Bank</option>
+                              <option>Yes Bank</option>
+
+                          </select>
+                      </div>
+                      
+                       <div class="mb-2">
+                          <label class="bold">OPType</label>
+                          <select name="OPType" style="padding:4px;width: 198px;margin-left:102px;width:190px;  ">
+                            <option selected="">--Select--</option>
+                            <option>New</option>
+                            <option>Old</option>
+                            <option>Review</option>
+                            <option>Telephonic</option>
+                            <option>Emergency</option>
+                            <option>Known</option>
+                            <option>Others</option>
+                            <option>Free</option>
+                            <option>Camp</option>
+                          </select>
+                      </div>
+                      
+                      <div class="mb-2">
+                          <label class="bold">Phone No.</label>
+                          <input type="text" name="phone" style="margin-left:80px;">
+                      </div>
+                      <div class="mb-2">
+                          <label class="bold">Printed By</label>
+                          <select name="printedBy" style="padding:4px;width: 190px;margin-left:76px;  ">
+                            <option selected="">--Select--</option>
+                            <option>TEJASWINI@SUNRISE.IN</option>
+                            <option>AzITH@SUNRISE.IN</option>
+                            <option>RAVI.P@SUNRISE.IN</option>
+                            <option>ajay@sunrise.in</option>
+                            <option>pavan1@sunrise.in</option>
+                          </select>
+                      </div>
+                        
+                    </div>
+                  </div>
+                  </form>
+                <!-- design end -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- accordian two start -->
+      <div class="accordian mt-3" style="-webkit-box-shadow: -2px 1px 18px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 1px 18px -1px rgba(0,0,0,0.75);
+box-shadow: -2px 1px 18px -1px rgba(0,0,0,0.75);">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" >
+              Service Head With Fee Details
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" >
+            <div class="accordion-body">
+
+              <div class="row">
+                <div class="col-md-1" style="background: #399883;color:white;border:0.1em solid white;">
+                  S.No.
+                </div>  
+                <div class="col-md-2" style="background: #399883;color:white;border:0.1em solid white;">
+                  Service Name
+                </div>  
+                <div class="col-md-1" style="background: #399883;color:white;border:0.1em solid white;">
+                  Quantity
+                </div>
+                <div class="col-md-1" style="background: #399883;color:white;border:0.1em solid white;">
+                  Rate
+                </div>
+                <div class="col-md-1" style="background: #399883;color:white;border:0.1em solid white;">
+                  Amount
+                </div>
+                <div class="col-md-2" style="background: #399883;color:white;border:0.1em solid white;">
+                  Service Category
+                </div>
+                <div class="col-md-1" style="background: #399883;color:white;border:0.1em solid white;">
+                  S. Type
+                </div>
+                <div class="col-md-1" style="background: #399883;color:white;border:0.1em solid white;">
+                  S. Code
+                </div>
+                <div class="col-md-1" style="background: #399883;color:white;border:0.1em solid white;">
+                  Inc/Exp
+                </div>
+                <div class="col-md-1" style="background: #399883;color:white;border:0.1em solid white;">
+                  <i class="fa fa-plus"></i> Add
+                </div>
+              </div>
+
+               <div class='row'>
+                <div class='col-md-1 border p-1' style='color:white;border:0.1em solid white;'>
+                  <input type='' name='' style='width:90px;' value='1'>
+                </div>
+                <div class='col-md-2 border p-1' style='color:white;border:0.1em solid white;'>
+                  <input type='' name='' >
+                </div>
+                <div class='col-md-1 border p-1' style='color:white;border:0.1em solid white;'>
+                  <input type='' name='' style='width:95px;' value='1'>
+                </div>
+                <div class='col-md-1 border p-1' style='color:white;border:0.1em solid white;'>
+                  <input type='' name='' style='width:94px;'>
+                </div>
+                <div class='col-md-1 border p-1' style='color:white;border:0.1em solid white;'>
+                  <input type='' name='' style='width:95px;'>
+                </div>
+                <div class='col-md-2 border p-1' style='color:white;border:0.1em solid white;'>
+                  <input type='' name=''>
+                </div>
+                <div class='col-md-1 border p-1' style='color:white;border:0.1em solid white;'>
+                  <input type='' name='' style='width:95px;'>
+                </div>
+                <div class='col-md-1 border p-1' style='color:white;border:0.1em solid white;'>
+                  <input type='' name='' style='width:95px;'>
+                </div>
+                <div class='col-md-1 border p-1' style='color:white;border:0.1em solid white;'>
+                  <input type='' name='' style='width:95px; '>
+                </div>
+                <div class='col-md-1 border p-1'>
+                  <center>
+                    <button class='btn btn-success' style='padding:1px 6px;' onclick='addSer(this)'>
+                      <i class='fa fa-plus' ></i>
+                    </button>
+                    /
+                    <button class='btn btn-danger' style='padding:1px 9px;' onclick='del(this)'>
+                      <i class='fa fa-trash' ></i>
+                    </button>
+                  </center>
+                </div>
+              </div>
+
+            </div>
+            <!-- accordian footer section -->
+            <hr>
+            <div class="row" style="margin-bottom: 0px;">
+              <div class="col-md-12">
+                &nbsp;
+                &nbsp;
+                <button disabled="" class="btn btn-success" style="padding:2px 8px;">Save</button>
+                <button  class="btn btn-success" style="padding:2px 8px;">Search</button>
+                <button disabled="" class="btn btn-success" style="padding:2px 8px;">Preview</button>
+                <button disabled="" class="btn btn-success" style="padding:2px 8px;">C Preview</button>
+              </div>
+            </div>
+             &nbsp;
+             &nbsp;
+            <div class="row" style="margin-left:5px;margin-top: -10px; margin-left:385px;">
+              Cash Amt:&nbsp; <input type="text" name="" style="width:60px;">&nbsp;
+              Card Amt:&nbsp; <input type="text" name="" style="width:70px;">&nbsp;
+              Adjust Amt:&nbsp; <input type="text" name="" style="width:50px;">&nbsp;
+              Dev Amt:&nbsp; <input type="text" name="" style="width:60px;">&nbsp;
+              Due:&nbsp; <select style="width:80px;"><option>No</option></select>&nbsp;
+              Disc:&nbsp; <input type="text" name="" placeholder="Rs" style="width:60px;">&nbsp;
+              Total:&nbsp; <input type="text" name="" placeholder="0" style="width:60px;">&nbsp;
+            </div>
+            <hr>
+            <div>
+              <center style="margin-top: -15px;" class='text-muted'>
+                © <b>VLS Bestsoft. </b>All rights reserved
+              </center>
+            </div>
+            <!-- accordian footer section -->
+          </div>
+        </div>
+      </div>
+      <!-- accordian two end -->
+      <div class="row mt-2" >
+        <div class="col-md-4">
+          &nbsp;&nbsp;
+          <button class="btn btn-success" onclick="generate()" style="background:#399883;">Generate</button>
+        </div>
+        
+        <div class="col-md-4">
+          <center>
+            <button class="btn btn-success" onclick="document.form1.reset();" style="background:#399883;">clearForm</button> 
+          </center>
+        </div>
+
+        <div class="col-md-4">
+          <span style="float:right; color:#ffffff;">ello</span>
+          <button class="btn btn-primary" style="float:right;background:#399883;" onclick="farword();" >Farword</button>
+        </div>
+      </div>
+
+    </div> <!-- closing of col 9 -->
+    </div> <!-- closing of col 3 -->
+  </div>
+
+    <script type="text/javascript">
+      window.onload = function()
+      {
+        document.querySelector("#headingThree").querySelector('button').click();
+      }
+      let accBody;
+      function addSer(btn)
+      {
+        accBody = btn.parentElement.parentElement.parentElement.parentElement;
+        let sNo = accBody.querySelectorAll(".row").length
+        let str = " <div class='row'>\
+                <div class='col-md-1 border p-1' style='color:white;border:0.1em solid white;'>\
+                  <input type='' name='' style='width:90px;' value='"+sNo+"'>\
+                </div>\
+                <div class='col-md-2 border p-1' style='color:white;border:0.1em solid white;'>\
+                  <input type='' name='' >\
+                </div>\
+                <div class='col-md-1 border p-1' style='color:white;border:0.1em solid white;'>\
+                  <input type='' name='' style='width:95px;' value='1'>\
+                </div>\
+                <div class='col-md-1 border p-1' style='color:white;border:0.1em solid white;'>\
+                  <input type='' name='' style='width:94px;'>\
+                </div>\
+                <div class='col-md-1 border p-1' style='color:white;border:0.1em solid white;'>\
+                  <input type='' name='' style='width:95px;'>\
+                </div>\
+                <div class='col-md-2 border p-1' style='color:white;border:0.1em solid white;'>\
+                  <input type='' name=''>\
+                </div>\
+                <div class='col-md-1 border p-1' style='color:white;border:0.1em solid white;'>\
+                  <input type='' name='' style='width:95px;'>\
+                </div>\
+                <div class='col-md-1 border p-1' style='color:white;border:0.1em solid white;'>\
+                  <input type='' name='' style='width:95px;'>\
+                </div>\
+                <div class='col-md-1 border p-1' style='color:white;border:0.1em solid white;'>\
+                  <input type='' name='' style='width:95px; '>\
+                </div>\
+                <div class='col-md-1 border p-1'>\
+                  <center>\
+                    <button class='btn btn-success' style='padding:1px 6px;' onclick='addSer(this)'>\
+                      <i class='fa fa-plus' ></i>\
+                    </button>\
+                    \/\
+                    <button class='btn btn-danger' style='padding:1px 9px;' onclick='del(this)'>\
+                      <i class='fa fa-trash'></i>\
+                    </button>\
+                  </center>\
+                </div>\
+              </div>";
+              accBody.innerHTML += str;
+      }
+      function del(btn)
+      {
+        if(btn.parentElement.parentElement.parentElement.parentElement.querySelectorAll('.row').length == 2)
+        {
+          return 0;
+        }
+        else
+        {
+          btn.parentElement.parentElement.parentElement.remove();
+        }
+      }
+      function check(t)
+      {
+        if(t ==  "--Select--")
+        {
+          t = "";
+          return t;
+        }
+        return t;
+      }
+      let amount;
+      function service()
+      {
+        amount = 0;
+        let i;
+        let str = "";
+        let row = document.querySelectorAll(".accordion-body")[1].querySelectorAll(".row");
+        let input;
+        for(i = 1;i<row.length;i++)
+        {
+          input = row[i].querySelectorAll('input');
+          if(input[1].value.trim().length > 0||input[3].value.trim().length > 0||input[4].value.trim().length > 0 || input[1].value.trim().length > 0)
+          {  
+              amount += parseInt(input[4].value);
+              str += "<div class='row' style='border-top:1px solid black'>\
+                    <div class='col-md-1'>"+input[0].value+"</div>\
+                    <div class='col-md-2'>"+input[1].value+"</div>\
+                    <div class='col-md-2'>"+input[2].value+"</div>\
+                    <div class='col-md-1'>"+form1.billNum.value+"</div>\
+                    <div class='col-md-2'>"+check(form1.repType.value)+"</div>\
+                    <div class='col-md-2'>"+input[6].value+"</div>\
+                    <div class='col-md-1'>"+parseInt(input[3].value).toLocaleString()+"</div>\
+                    <div class='col-md-1'>"+parseInt(input[4].value).toLocaleString()+"</div>\
+                  </div>";
+          }
+        }
+        return str;
+      }
+
+      let name;
+      let ageGender;
+      let uhid;
+      let patientNo;
+      let billDate;
+      let billType; 
+      let doctor;
+      let refDoc;
+      let pNumber;
+      let department;
+      let address;
+      
+      let company = form1.company;
+      let consultant = form1.docName;
+      let pMode = form1.payMode; 
+      let total;
+      let ser;
+
+      let serHeading = "<div class='row' style='border-top: 1px solid black'>\
+                          <div class='col-md-1'><b>S.No.</b></div> \
+                          <div class='col-md-2'><b>Service Name</b></div>\
+                          <div class='col-md-2'><b>No. of Times</b></div>\
+                          <div class='col-md-1'><b>Bill No.</b></div>\
+                          <div class='col-md-2'><b>Account Type</b></div>\
+                          <div class='col-md-2'><b>status</b></div>\
+                          <div class='col-md-1'><b>fee</b></div>\
+                          <div class='col-md-1'><b>Amount</b></div>\
+                        </div>";
+      let template;
+      function generate()
+      {
+
+
+          name = form1.patName.value;
+          ageGender = form1.age.value+" "+check(form1.gender.value);
+          uhid = form1.uhidNumber.value;
+          patientNo = form1.PatNumber.value;
+          billDate = form1.billDate.value;
+          billType = check(form1.billType.value); 
+          doctor  = check(form1.docName.value);
+          refDoc = check(form1.refDoc.value);
+          pNumber = form1.phone.value;
+          department = check(form1.department.value);
+          address = form1.address.value;
+          created = check(form1.createdBy.value);
+          printed = check(form1.printedBy.value);
+
+          company = check(form1.company.value);
+          consultant = check(form1.docName.value);
+          pMode = check(form1.payMode.value);
+
+
+          //checking important feild
+          if(uhid.trim().length > 0 && patientNo.trim().length > 0 && doctor.trim().length > 0 && company.trim().length > 0){
+          ser = service();
+          if(ser.trim().length != 0)
+          {
+            ser = serHeading+ser;
+          }
+
+          total = amount;
+          template = "<div id='reportContainer' class='p-3'>\
+          <div class='container mt-3' style ='border:1px solid black;font-family: arial,arail black;'>\
+      <div class='row'>\
+        <div class='col-md-6 text-center'>\
+            <img src='logo.png' width='400' class='mt-3'>\
+            <br><br>\
+            <span style='font-family:arial;font-weight:bold'>\
+              Old Busstand Road, BesidesKotireddy WomensCollege, Nagarajupeta, Kadapa, Andhra\
+              Pradesh 516001\
+            </span>\
+            <br><br>\
+            <span style='font-family:arial;font-weight:bold'>Phone No : 08886655565,8886644301 Email : info@sunrisehospitalkadapa.in</span>\
+            <br><br>\
+            <h4>Lab Investigation Fee Receipt (OP) - Paid</h4>\
+        </div>\
+        <div class='col-md-6' style='border-left:1px solid black;'>\
+          <table>\
+            <tr>\
+              <th scope='col'>Patient Name</th>\
+              <th id='name'>:"+name+"</th>\
+            </tr>\
+            <tr>\
+              <th scope='col'>Age & gender</th>\
+              <td id='age&gender'>:"+ageGender+"</td>\
+            </tr>\
+            <tr>\
+              <th scope='col'>UHID/UMRNo</th>\
+              <th id='uhid'>:"+uhid+"</th>\
+            </tr>\
+            <tr>\
+              <th scope='col'>PatientOPNo</th>\
+              <th id='patNo'>:"+patientNo+"</th>\
+            </tr>\
+            <tr>\
+              <th scope='col'>Bill Date</th>\
+              <td id='dateTime'>:"+billDate+"</td>\
+            </tr>\
+            <tr>\
+              <th scope='col'>Bill Type</th>\
+              <td id='bType'>:"+billType+"</td>\
+            </tr>\
+            <tr>\
+              <th scope='col'>Doctor</th>\
+              <td id='doctor'>:"+doctor+"</td>\
+            </tr>\
+            <tr>\
+              <th scope='col'>Ref Dr</th>\
+              <td>:"+refDoc+"</td>\
+            </tr>\
+            <tr>\
+              <th scope='col'>Phone Number </th>\
+              <td id='pNumber'>:"+pNumber+"</td>\
+            </tr>\
+            <tr>\
+              <th scope='col'>Address </th>\
+              <td id='address'>: "+address+"</td>\
+            </tr>\
+          </table>\
+        </div>\
+      </div>\
+      <div class='row' style='border-top:1px solid black'>\
+        <div class='col-md-4'>\
+          <b>Sponsor (Company):</b>\
+          <span id='company'>\
+          "+company+"\
+          </span>\
+        </div>\
+        <div class='col-md-4'>\
+          <b>Department:</b>\
+          <span id='department'>\
+          "+department+"\
+          </span>\
+        </div>\
+        <div class='col-md-4'>\
+          <b>Consultant:</b>\
+          <span id='consultant'>\
+            "+consultant+"\
+          </span>\
+        </div>\
+      </div>\
+      "+ser+"\
+    <div class='row' style='border-top:1px solid black;'>\
+      <div class='col-md-6'>\
+        <b>Cash Amount:</b>\
+        <span id='cashAmount'>"+total+"</span>\
+      </div>\
+      <div class='col-md-6'>\
+            <span style='display:inline;float:right; font-weight:bolder;' id='total'>"+total+"</span>\
+            <b style='display:inline;float:right;'>Total:</b>\
+      </div>\
+    </div>\
+    <div class='row' style='border-top:1px solid black;'>\
+      <b id='inWords'>"+price_in_words(total)+"</b>\
+    </div>\
+    <div class='row' style='border-top:1px solid black;'>\
+      <div class='col-md-6'>\
+        <b>Payment Mode</b>\
+        <span id='pMode'>"+pMode+"</span>\
+      </div>\
+    </div>\
+    </div>\
+  <div class='container' style='width: 1000px; margin-top: 20px;'>\
+    <div class='row'>\
+      <div class='col-md-6'>\
+        <b>CreatedBy:"+created+"</b>\
+        <b>PrintedBY:"+printed+"</b>\
+      </div>\
+      <div class='col-md-6'>\
+        <img src='bar.png' width='300' height='30''>\
+      </div>\
+    </div>\
+    </div>\
+    <div class='container' style='width: 1000px; margin-top:40px;'>\
+      <div class='row justify-content-end' style='font-weight: bolder;'>\
+          Authorised Sign\
+      </div>\
+    </div>\
+    </div>\
+     <div class='container mt-3'>\
+      <div class='row'>\
+        <div class='col-md-6'><button class='btn btn-danger' onclick='back()'>back</button></div>\
+        <div class='col-md-6'><button class='btn btn-primary' onclick='download()' style='float:right;'>Download</button></div>\
+      </div>\
+     </div>\
+    ";
+      document.querySelector(".report").innerHTML = template;
+      document.querySelector('.report').hidden = false;
+      document.querySelector('.mainContainer').hidden = true;
+      }
+      else
+      {
+        console.log(company);
+        console.log(doctor);
+        alert("please fill all the necessary feilds");
+      }
+
+      }
+
+      flag = 0
+      function back()
+      {
+          document.querySelector('.report').hidden = true;
+          document.querySelector('.mainContainer').hidden = false;   
+          flag = 1;
+      }
+
+      function farword()
+      {
+        if(flag == 1)
+        {
+          document.querySelector('.report').hidden = false;
+          document.querySelector('.mainContainer').hidden = true;   
+        }
+      }
+
+      function save(div,name)
+      {
+        domtoimage.toPng(div)
+          .then(function (dataUrl) 
+          {
+            var img = new Image();
+            img.src = dataUrl;
+            var link = document.createElement('a');
+            link.download = name;
+            link.href = dataUrl;
+            link.click();
+          })
+          .catch(function (error) 
+          {
+            alert('oops, something went wrong!', error);
+          });
+      }
+
+      function price_in_words(price) {
+        if(price == 0)
+        {
+          return "Zero";
+        }
+  var sglDigit = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"],
+    dblDigit = ["Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"],
+    tensPlace = ["", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"],
+    handle_tens = function(dgt, prevDgt) {
+      return 0 == dgt ? "" : " " + (1 == dgt ? dblDigit[prevDgt] : tensPlace[dgt])
+    },
+    handle_utlc = function(dgt, nxtDgt, denom) {
+      return (0 != dgt && 1 != nxtDgt ? " " + sglDigit[dgt] : "") + (0 != nxtDgt || dgt > 0 ? " " + denom : "")
+    };
+
+  var str = "",
+    digitIdx = 0,
+    digit = 0,
+    nxtDigit = 0,
+    words = [];
+  if (price += "", isNaN(parseInt(price))) str = "";
+  else if (parseInt(price) > 0 && price.length <= 10) {
+    for (digitIdx = price.length - 1; digitIdx >= 0; digitIdx--) switch (digit = price[digitIdx] - 0, nxtDigit = digitIdx > 0 ? price[digitIdx - 1] - 0 : 0, price.length - digitIdx - 1) {
+      case 0:
+        words.push(handle_utlc(digit, nxtDigit, ""));
+        break;
+      case 1:
+        words.push(handle_tens(digit, price[digitIdx + 1]));
+        break;
+      case 2:
+        words.push(0 != digit ? " " + sglDigit[digit] + " Hundred" + (0 != price[digitIdx + 1] && 0 != price[digitIdx + 2] ? " and" : "") : "");
+        break;
+      case 3:
+        words.push(handle_utlc(digit, nxtDigit, "Thousand"));
+        break;
+      case 4:
+        words.push(handle_tens(digit, price[digitIdx + 1]));
+        break;
+      case 5:
+        words.push(handle_utlc(digit, nxtDigit, "Lakh"));
+        break;
+      case 6:
+        words.push(handle_tens(digit, price[digitIdx + 1]));
+        break;
+      case 7:
+        words.push(handle_utlc(digit, nxtDigit, "Crore"));
+        break;
+      case 8:
+        words.push(handle_tens(digit, price[digitIdx + 1]));
+        break;
+      case 9:
+        words.push(0 != digit ? " " + sglDigit[digit] + " Hundred" + (0 != price[digitIdx + 1] || 0 != price[digitIdx + 2] ? " and" : " Crore") : "")
+    }
+    str = words.reverse().join("")
+  } else str = "";
+  return str
+
+}
+
+      function download()
+      {
+        document.querySelectorAll('button')[0].hidden = true;
+        document.querySelectorAll('button')[1].hidden = true;
+        window.print();
+        document.querySelectorAll('button')[0].hidden = false;
+        document.querySelectorAll('button')[1].hidden = false;
+      
+      }
+
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js'></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
